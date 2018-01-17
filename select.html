@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      a {color: black; text-decoration: none;}
+      h1 {text-align: center; font-size: 50px; border-bottom: 1px solid green; padding-bottom: 10px;}
+      h3 {color: green; text-align: center;}
+      ol {border-right: 1px solid black;}
+      @media(max-width:800px){
+        #choice0{display: grid;}
+        ol{border-right:2px solid green;}}
+      #choice0{display: grid; grid-template-columns:1fr 1fr;}
+      #choice1{display: grid;}
+      #choice2{display: grid; padding-left: 30px;}
+    </style>
+  </head>
+  <body>
+    <h1><a href="http://naver.com" target="_blank" style="color: green">NAVER</a></h1>
+    <h3>로고를 누르면 네이버로 이동</h3>
+    <div id="choice0">
+      <div id="choice1">
+      <h2>원청의 저녁메뉴?</h2>
+
+
+      <ol>
+        <li><a href="http://terms.naver.com/entry.nhn?docId=1051965&cid=48179&categoryId=48237" class="food">
+          초밥</a></li>
+        <li><a href="http://m.post.naver.com/viewer/postView.nhn?volumeNo=10298112&memberNo=32920277&vType=VERTICAL" class="food">
+          양꼬치</a></li>
+        <li><a href="http://terms.naver.com/entry.nhn?docId=1117178&cid=40942&categoryId=32140" class="food">
+          스테이크</a></li>
+      </ol>
+      </div>
+      <div id="choice2">
+          <br>
+          <p>
+          <select name = "sushi">
+            <optgroup label="1.초밥">
+              <option value="참치">참치</option>
+              <option value="연어">연어</option>
+              <option value="도미">도미</option>
+            </optgroup>
+            <optgroup label="2.양꼬치">
+              <option value="성민">성민</option>
+              <option value="복성각">복성각</option>
+            </optgroup>
+            <optgroup label="3.스테이크">
+              <option value="안심">안심</option>
+              <option value="등심">등심</option>
+              <option value="살치살">살치살</option>
+            </optgroup>
+          </select>
+          </P>
+
+          <p>
+          <label><input type="checkbox" value="1">앙</label>
+          <label><input type="checkbox" value="2">기</label>
+          <label><input type="checkbox" value="3">모</label>
+          <label><input type="checkbox" value="4">띠</label>
+          </p>
+
+          <p>
+          <input type="button" name="제출하기" value="제출하기" onclick="alert('떙큐 브로. 추천 감사여^^')">
+          </p>
+      </div>
+  </div>
+  </body>
+</html>
